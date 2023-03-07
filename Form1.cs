@@ -16,5 +16,10 @@ namespace boolean_functions_tasks
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

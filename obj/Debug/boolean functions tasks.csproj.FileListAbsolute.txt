@@ -1,0 +1,11 @@
+C:\Users\expecto\source\repos\boolean functions tasks\bin\Debug\boolean functions tasks.exe.config
+C:\Users\expecto\source\repos\boolean functions tasks\bin\Debug\boolean functions tasks.exe
+C:\Users\expecto\source\repos\boolean functions tasks\bin\Debug\boolean functions tasks.pdb
+C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean functions tasks.csproj.AssemblyReference.cache
+C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean functions tasks.csproj.SuggestedBindingRedirects.cache
+C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean_functions_tasks.Form1.resources
+C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean_functions_tasks.Properties.Resources.resources
+C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean functions tasks.csproj.GenerateResource.cache
+C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean functions tasks.csproj.CoreCompileInputs.cache
+C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean functions tasks.exe
+C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean functions tasks.pdb
