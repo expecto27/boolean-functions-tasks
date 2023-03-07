@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace boolean_functions_tasks
 {
-    public partial class Form1 : Form
+    public partial class main : Form
     {
-        public Form1()
+        public main()
         {
             InitializeComponent();
         }
@@ -20,6 +20,12 @@ namespace boolean_functions_tasks
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            task1 t = new task1();
+            t.ShowDialog();
         }
     }
 }
