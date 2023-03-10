@@ -10,3 +10,4 @@ C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean function
 C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean functions tasks.pdb
 C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean_functions_tasks.main.resources
 C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean_functions_tasks.task1.resources
+C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean_functions_tasks.task2.resources
