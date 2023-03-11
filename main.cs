@@ -33,5 +33,11 @@ namespace boolean_functions_tasks
             task2 t = new task2();
             t.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            task4 t = new task4();
+            t.ShowDialog();
+        }
     }
 }
