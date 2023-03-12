@@ -20,24 +20,18 @@ namespace boolean_functions_tasks
         private void button1_Click(object sender, EventArgs e)
         {
             label4.Text = "Остаточная: ";
-            string[] functionStr = textBox1.Text.Split();
-            double[] function = new double[functionStr.Length];
-            for (int i = 0; i < function.Length; i++)
+            string f = textBox1.Text;
+            int x1 = int.Parse(textBox2.Text); // variable number
+            int x = Convert.ToInt32(Math.Abs(x1 - Math.Sqrt(f.Length)));
+            int a = int.Parse(textBox3.Text); // 0 or 1
+            for (int i = a * (1 << x); i < f.Length; i += (1 << x + 1))
             {
-                function[i] = double.Parse(functionStr[i]);
-            }
-            int index = int.Parse(textBox2.Text);
-            int bit = int.Parse(textBox3.Text);
-            double residue = bit;
-            for (int i = 0; i < function.Length/2+1; i++)
-            {
-                if (i != index)
+                for (int j = 0; j < (1 << x); ++j)
                 {
-                    residue -= function[i];
+                    label4.Text += f[j + i];
                 }
             }
-            label4.Text += residue;
-
+            
         }
     }
 }
