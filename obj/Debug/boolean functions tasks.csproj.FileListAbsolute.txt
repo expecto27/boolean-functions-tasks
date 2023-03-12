@@ -12,3 +12,17 @@ C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean_function
 C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean_functions_tasks.task1.resources
 C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean_functions_tasks.task2.resources
 C:\Users\expecto\source\repos\boolean functions tasks\obj\Debug\boolean_functions_tasks.task4.resources
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\bin\Debug\boolean functions tasks.exe.config
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\bin\Debug\boolean functions tasks.exe
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\bin\Debug\boolean functions tasks.pdb
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean functions tasks.csproj.AssemblyReference.cache
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean functions tasks.csproj.SuggestedBindingRedirects.cache
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.main.resources
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.Properties.Resources.resources
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task1.resources
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task2.resources
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task4.resources
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean functions tasks.csproj.GenerateResource.cache
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean functions tasks.csproj.CoreCompileInputs.cache
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean functions tasks.exe
+C:\Users\aima2\source\repos\expecto27\boolean-functions-tasks\obj\Debug\boolean functions tasks.pdb

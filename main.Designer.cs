@@ -34,6 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -41,7 +42,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(152, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 13);
+            this.label2.Size = new System.Drawing.Size(123, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Выберите задачу";
             // 
@@ -84,9 +85,20 @@
             this.button4.Text = "Задача 5";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(275, 43);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(114, 47);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Задача 3";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // main
             // 
             this.ClientSize = new System.Drawing.Size(433, 285);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -108,6 +120,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
