@@ -41,3 +41,19 @@ C:\Users\expecto\Source\Repos\boolean-functions-tasks\obj\Debug\boolean function
 C:\Users\expecto\Source\Repos\boolean-functions-tasks\obj\Debug\boolean functions tasks.csproj.CoreCompileInputs.cache
 C:\Users\expecto\Source\Repos\boolean-functions-tasks\obj\Debug\boolean functions tasks.exe
 C:\Users\expecto\Source\Repos\boolean-functions-tasks\obj\Debug\boolean functions tasks.pdb
+C:\Users\expecto\Downloads\kiki\bin\Debug\boolean functions tasks.exe.config
+C:\Users\expecto\Downloads\kiki\bin\Debug\boolean functions tasks.exe
+C:\Users\expecto\Downloads\kiki\bin\Debug\boolean functions tasks.pdb
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean functions tasks.csproj.AssemblyReference.cache
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean functions tasks.csproj.SuggestedBindingRedirects.cache
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean_functions_tasks.main.resources
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean_functions_tasks.Properties.Resources.resources
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean_functions_tasks.task1.resources
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean_functions_tasks.task2.resources
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean_functions_tasks.task4.resources
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean_functions_tasks.task5.resources
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean functions tasks.csproj.GenerateResource.cache
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean functions tasks.csproj.CoreCompileInputs.cache
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean functions tasks.exe
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean functions tasks.pdb
+C:\Users\expecto\Downloads\kiki\obj\Debug\boolean_functions_tasks.task6.resources
