@@ -44,10 +44,11 @@ namespace boolean_functions_tasks
                     }
                     if (ans[(ans.Length) - 1] == 'v') ans = ans.Substring(0, (ans.Length) - 1);
                     ans += ")";
+
                 }
             }
 
-            textBox2.Text = ans;
+            textBox2.Text = ans; // answer
         }
     }
 }
