@@ -20,86 +20,97 @@ namespace boolean_functions_tasks
         private void button1_Click(object sender, EventArgs e)
         {
             string f = label2.Text.Substring(7);
-
+            char[] arg = { 'X', 'Y', 'Z', 'W', 'T', 'P', 'M' };
             int n = 0;
+            string tmp = textBox2.Text;
+            int count = 0;
 
-            while ((1 << n) < f.Length) n++; // quantity arguments
+            for (int i = 0; i < tmp.Length; i++) if (tmp[i] == 'v') count++;
 
-            string tDNF = textBox2.Text;
-
-            string[] DNF = tDNF.Split('v');
-            
-            bool answer = true;
-
-            bool answerTemp1 = false;
-
-            bool answerTemp = true;
-            for (int i = 0; i < f.Length; i++)
+            string[] DNF = new string[++count];
+            int temp = 0;
+            for (int i = 0; i < count; i++) // writing every member of DNF to tmp[]
             {
-                
-                if (f[i] == '1')
+                if (temp > 0) temp++;
+                for(int j = temp; j < tmp.Length; j++)
                 {
-                    string BinaryCode = Convert.ToString(i, 2); // Binary code j
-
-                    if (i < f.Length / 2) // добавление нулей в начало набора
+                    if (tmp[j] == 'v'){
+                        temp = j;
+                        break;
+                    } else {
+                        DNF[i] += tmp[j];
+                    }
+                }
+            }
+            bool flag = true;
+            while ((1 << n) < f.Length) n++; // quantity arguments
+            temp = 0;
+            bool answer1 = false;
+            for(int i = 0; i < count; i++)
+            {
+                bool answer2 = true;
+                
+                for (int j = temp; j < tmp.Length; j++)
+                {
+                    string BinaryCode = Convert.ToString(i, 2); // binary code int i
+                    if (i < f.Length / 2)
                     {
                         while (BinaryCode.Length < n) BinaryCode = "0" + BinaryCode;
                     }
-
-                    answerTemp1 = false;
-
-                    for (int j = 0; j < DNF.Length; j++) // цикл по всему ДНФ 
+                    if (tmp[j] == ' ') j++;
+                    if (tmp[j] == '-')
                     {
-                        answerTemp = true;
-                        for (int u = 0; u < DNF[j].Length; u++) // цикл по каждому элем. ДНФ
+                        string BinaryCode1 = "";
+                        for (int y = 0; y < BinaryCode.Length; y++)
                         {
-                            if (DNF[j][u] == 'X')
-                            {
-                                if (u - 1 >= 0 && DNF[j][u - 1] == '-') answerTemp = answerTemp && (!char_to_bool(BinaryCode[0]));
-                                else answerTemp = answerTemp && (char_to_bool(BinaryCode[0]));
-                            }
-                            else if (DNF[j][u] == 'Y')
-                            {
-                                if (u - 1 >= 0 && DNF[j][u - 1] == '-') answerTemp = answerTemp && (!char_to_bool(BinaryCode[1]));
-                                else answerTemp = answerTemp && (char_to_bool(BinaryCode[1]));
-                            }
-                            else if (DNF[j][u] == 'Z')
-                            {
-                                if (u - 1 >= 0 && DNF[j][u - 1] == '-') answerTemp = answerTemp && (!char_to_bool(BinaryCode[2]));
-                                else answerTemp = answerTemp && (char_to_bool(BinaryCode[2]));
-                            }
-                            else if (DNF[j][u] == 'W')
-                            {
-                                if (u - 1 >= 0 && DNF[j][u - 1] == '-') answerTemp = answerTemp && (!char_to_bool(BinaryCode[3]));
-                                else answerTemp = answerTemp && (char_to_bool(BinaryCode[3]));
-                            }
-                            else if (DNF[j][u] == 'T')
-                            {
-                                if (u - 1 >= 0 && DNF[j][u - 1] == '-') answerTemp = answerTemp && (!char_to_bool(BinaryCode[4]));
-                                else answerTemp = answerTemp && (char_to_bool(BinaryCode[4]));
-                            }
-                            else if (DNF[j][u] == 'P')
-                            {
-                                if (u - 1 >= 0 && DNF[j][u - 1] == '-') answerTemp = answerTemp && (!char_to_bool(BinaryCode[5]));
-                                else answerTemp = answerTemp && (char_to_bool(BinaryCode[5]));
-                            }
-                            else if (DNF[j][u] == 'M')
-                            {
-                                if (u - 1 >= 0 && DNF[j][u - 1] == '-') answerTemp = answerTemp && (!char_to_bool(BinaryCode[6]));
-                                else answerTemp = answerTemp && (char_to_bool(BinaryCode[6]));
-                            }
+                            if (BinaryCode[y] == '0') BinaryCode1 += '1' + BinaryCode1;
+                            else BinaryCode1 += '0' + BinaryCode1;
                         }
-                        answerTemp1 = answerTemp1 || answerTemp;
-                        if (answerTemp1) break;
+                        BinaryCode = BinaryCode1;
                     }
-                    answer = answer && answerTemp1;
+
+                    else if (tmp[j] == 'X')
+                    {
+                        answer2 &= char_to_bool(BinaryCode[0]);
+                    }
+                    else if (tmp[j] == 'Y')
+                    {
+                        answer2 &= char_to_bool(BinaryCode[1]);
+                    }
+                    else if (tmp[j] == 'Z')
+                    {
+                        answer2 &= char_to_bool(BinaryCode[2]);
+                    }
+                    else if (tmp[j] == 'W')
+                    {
+                        answer2 &= char_to_bool(BinaryCode[3]);
+                    }
+                    else if (tmp[j] == 'T')
+                    {
+                        answer2 &= char_to_bool(BinaryCode[4]);
+                    }
+                    else if (tmp[j] == 'P')
+                    {
+                        answer2 &= char_to_bool(BinaryCode[5]);
+                    }
+                    else if (tmp[j] == 'M')
+                    {
+                        answer2 &= char_to_bool(BinaryCode[6]);
+                    }
+                    else
+                    {
+                        flag = false;
+                        MessageBox.Show("ДНФ введена некорректно", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
+                answer1 = answer1 || answer2;
+
             }
-            if (answer) MessageBox.Show("Введенная ДНФ является верной", "Поздравляем", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else MessageBox.Show("Введенная ДНФ является не верной", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if(answer1) MessageBox.Show("ДНФ введена верно", "Вы правы", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else if(flag) MessageBox.Show("ДНФ введена корректно, но неверно", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
 
-      
         private bool char_to_bool(char x)
         {
             if (x == '0') return false;
