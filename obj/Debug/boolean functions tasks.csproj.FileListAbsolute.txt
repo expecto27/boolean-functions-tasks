@@ -92,3 +92,6 @@ C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean functions t
 C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean functions tasks.exe
 C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean functions tasks.pdb
 C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task9.resources
+C:\Users\expecto\source\repos\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task6.resources
+C:\Users\expecto\source\repos\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task8.resources
+C:\Users\expecto\source\repos\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task9.resources
