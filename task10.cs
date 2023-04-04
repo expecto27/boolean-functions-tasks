@@ -12,6 +12,7 @@ namespace boolean_functions_tasks
 {
     public partial class task10 : Form
     {
+        private bool[] all;
         public task10()
         {
             InitializeComponent();
@@ -20,6 +21,7 @@ namespace boolean_functions_tasks
         private void button2_Click(object sender, EventArgs e)
         {
             int n = int.Parse(textBox1.Text);
+            
             label2.Text = "f(x) = ";
             Random rnd = new Random();
 
@@ -28,6 +30,7 @@ namespace boolean_functions_tasks
                 MessageBox.Show("Введите n в промежутке от 1 до 7", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             int k = (1 << n);
+            this.all = new bool[k];
             string fx = "";
             for (int i = 0; i < k; i++)
             {
@@ -62,10 +65,63 @@ namespace boolean_functions_tasks
             }
             return true;
         }
+        
+        
+
+        private bool isL(string f)
+        {
+            if (f.Length == 2) return true;
+            bool[] func = stringToBool(f);
+            bool[] func1 = pascal(func);
+            all[0] = func1[0];
+            for (int i = 0; i < all.Length; i++)
+            {
+                string BinaryCode = Convert.ToString(i, 2);
+                if (all[i] && flen(BinaryCode) > 1) return false;
+            }
+            return true;
+        }
+        
+        private int flen(string f)
+        {
+            int c = 0;
+            for (int i = 0; i < f.Length; i++)
+            {
+                if (f[i] == '1') c++;
+            }
+            return c;
+
+        }
+        private bool[] pascal(bool[] f)
+        { 
+            bool[] f1 = new bool[f.Length - 1];
+            for (int i = 1; i < f.Length; i++)
+            {
+                f1[i - 1] = f[i] ^ f[i - 1]; 
+            }
+            if (f.Length == 1)
+            {
+                all[all.Length - 1] = f[0];
+                return f;
+            }
+            all[all.Length - f1.Length] = f1[0];
+            return pascal(f1);
+        }
+        private bool[] stringToBool(string f)
+        {
+            bool[] func = new bool[f.Length];
+            for (int i = 0; i < f.Length; i++)
+            {
+                if (f[i] == '0') func[i] = false;
+                else func[i] = true;
+            }
+            return func;
+        }
+
         private int charToInt(char ch)
         {
-            if (ch == '1') return 1;
-            return 0;
+            if(ch == '1') return 1;
+            else return 0;
         }
         private bool check(string f)
         {
@@ -73,7 +129,7 @@ namespace boolean_functions_tasks
             else if (checkBox2.Checked != isT1(f)) return false;
             else if (checkBox3.Checked != isS(f)) return false;
             else if (checkBox4.Checked != isM(f)) return false;
-            //else if (checkBox5.Checked != isL(f)) return false;
+            else if (checkBox5.Checked != isL(f)) return false;
             return true;
         }
         private void button1_Click(object sender, EventArgs e)
