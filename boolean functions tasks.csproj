@@ -141,6 +141,9 @@
     <EmbeddedResource Include="task1.resx">
       <DependentUpon>task1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="task10.resx">
+      <DependentUpon>task10.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="task2.resx">
       <DependentUpon>task2.cs</DependentUpon>
     </EmbeddedResource>
