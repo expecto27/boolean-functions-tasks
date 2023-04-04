@@ -1,28 +1,28 @@
 # boolean-functions-tasks
 
 
-1.1 "N" is the number of function arguments in the application.
-1.2 If the application requests the "N" parameter from the user, then it is necessary
-specify an int(integer) value.
-1.3 Do not try to generate functions with a negative number of arguments.
-1.4 Do not attempt to generate functions with 8 or more arguments.
+1.1 "N" is the number of function arguments in the application.  
+1.2 If the application requests the "N" parameter from the user, then it is necessary  
+specify an int(integer) value.  
+1.3 Do not try to generate functions with a negative number of arguments.  
+1.4 Do not attempt to generate functions with 8 or more arguments.  
 
-2.1 When the user enters the KNF or DNF, the following arguments must be used
-{X, Y, Z, W, T, P, M} exactly in that order.
+2.1 When the user enters the KNF or DNF, the following arguments must be used  
+{X, Y, Z, W, T, P, M} exactly in that order.  
 
 3.1 When using the application, it is necessary to enter data into the textBox elements.  
 
 4. When entering KNF:  
 
-4.1, the conjunction operator is replaced by the symbol *.
-4.2 The disjunction operator is replaced by the symbol v (Latin letter v).
+4.1, the conjunction operator is replaced by the symbol *.  
+4.2 The disjunction operator is replaced by the symbol v (Latin letter v).  
 4.3 The negation operator is replaced by the symbol - (Minus sign).  
 
 5. When entering DNF:  
 
-5.1 The conjunction operator is replaced by the symbol * or omitted.
-5.2 The disjunction operator is replaced by the symbol v (Latin letter v).
-5.3 The negation operator is replaced by the symbol - (Minus sign).
+5.1 The conjunction operator is replaced by the symbol * or omitted.  
+5.2 The disjunction operator is replaced by the symbol v (Latin letter v).  
+5.3 The negation operator is replaced by the symbol - (Minus sign).  
 
 1.1 "N" - в приложении число аргументов функции.  
 1.2 Если приложение запрашивает у пользователя параметр "N", то необходимо  
