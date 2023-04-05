@@ -68,6 +68,8 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(654, 76);
             this.panel2.TabIndex = 0;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.main_MouseDown);
+            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.main_MouseMove);
             // 
             // label2
             // 
@@ -87,7 +89,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button1.Location = new System.Drawing.Point(134, 224);
+            this.button1.Location = new System.Drawing.Point(141, 208);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 52);
             this.button1.TabIndex = 14;
@@ -102,7 +104,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button2.Location = new System.Drawing.Point(261, 225);
+            this.button2.Location = new System.Drawing.Point(268, 209);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 52);
             this.button2.TabIndex = 15;
@@ -117,7 +119,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button3.Location = new System.Drawing.Point(134, 283);
+            this.button3.Location = new System.Drawing.Point(141, 267);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 51);
             this.button3.TabIndex = 16;
@@ -132,7 +134,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button4.Location = new System.Drawing.Point(261, 284);
+            this.button4.Location = new System.Drawing.Point(268, 268);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(106, 51);
             this.button4.TabIndex = 17;
@@ -147,7 +149,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button5.Location = new System.Drawing.Point(392, 226);
+            this.button5.Location = new System.Drawing.Point(399, 210);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(107, 52);
             this.button5.TabIndex = 18;
@@ -162,7 +164,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button6.Location = new System.Drawing.Point(392, 284);
+            this.button6.Location = new System.Drawing.Point(399, 268);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(107, 51);
             this.button6.TabIndex = 19;
@@ -177,7 +179,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button7.Location = new System.Drawing.Point(134, 341);
+            this.button7.Location = new System.Drawing.Point(141, 325);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(106, 51);
             this.button7.TabIndex = 20;
@@ -192,7 +194,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button8.Location = new System.Drawing.Point(261, 342);
+            this.button8.Location = new System.Drawing.Point(268, 326);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(106, 51);
             this.button8.TabIndex = 21;
@@ -207,7 +209,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button9.Location = new System.Drawing.Point(392, 342);
+            this.button9.Location = new System.Drawing.Point(399, 326);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(107, 51);
             this.button9.TabIndex = 22;
@@ -222,7 +224,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button10.Location = new System.Drawing.Point(133, 400);
+            this.button10.Location = new System.Drawing.Point(140, 384);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(106, 51);
             this.button10.TabIndex = 23;
@@ -237,7 +239,7 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button11.Location = new System.Drawing.Point(261, 400);
+            this.button11.Location = new System.Drawing.Point(268, 384);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(106, 51);
             this.button11.TabIndex = 24;
@@ -252,7 +254,7 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
-            this.button12.Location = new System.Drawing.Point(392, 400);
+            this.button12.Location = new System.Drawing.Point(399, 384);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(107, 51);
             this.button12.TabIndex = 25;

@@ -31,11 +31,19 @@ namespace boolean_functions_tasks
         {
             label2.Text = "f(x) = ";
             Random rnd = new Random();
-            
-            int n = int.Parse(textBox1.Text);
+            int n = 0;
+            try
+            {
+                n = int.Parse(textBox1.Text);
+                
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Введите n в промежутке от 1 до 7", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             if (n > 7 || n < 1)
             {
-                MessageBox.Show("Введите n в промежутке от 1 до 7","Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Введите n в промежутке от 1 до 7", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             int k = (1 << n);
             string fx = "";
@@ -44,6 +52,26 @@ namespace boolean_functions_tasks
                 fx += rnd.Next(0, 2).ToString();
             }
             label2.Text += fx;
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        Point last;
+        private void main_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - last.X;
+                this.Top += e.Y - last.Y;
+            }
+        }
+
+        private void main_MouseDown(object sender, MouseEventArgs e)
+        {
+            last = new Point(e.X, e.Y);
         }
     }
 }
