@@ -180,10 +180,25 @@ namespace boolean_functions_tasks
         {
             return !(x == '0');
         }
-
-        private void label3_Click(object sender, EventArgs e)
+        
+        Point last;
+        private void main_MouseMove(object sender, MouseEventArgs e)
         {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - last.X;
+                this.Top += e.Y - last.Y;
+            }
+        }
 
+        private void main_MouseDown(object sender, MouseEventArgs e)
+        {
+            last = new Point(e.X, e.Y);
+        }
+
+        private void close_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

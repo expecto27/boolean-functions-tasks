@@ -17,15 +17,6 @@ namespace boolean_functions_tasks
             InitializeComponent();
         }
 
-        private void task1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -73,5 +64,7 @@ namespace boolean_functions_tasks
         {
             last = new Point(e.X, e.Y);
         }
+
+        
     }
 }

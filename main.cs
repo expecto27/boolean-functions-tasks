@@ -17,10 +17,6 @@ namespace boolean_functions_tasks
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -92,11 +88,6 @@ namespace boolean_functions_tasks
         {
             task12 t = new task12();
             t.ShowDialog();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void close_Click(object sender, EventArgs e)
