@@ -95,3 +95,4 @@ C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean_functions_t
 C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task7.resources
 C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task10.resources
 C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task3.resources
+C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task11.resources

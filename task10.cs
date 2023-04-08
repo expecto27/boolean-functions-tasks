@@ -36,7 +36,7 @@ namespace boolean_functions_tasks
             {
                 fx += rnd.Next(0, 2).ToString();
             }
-            label2.Text += fx;
+            
         }
 
         private bool isT0(string f)
@@ -136,7 +136,7 @@ namespace boolean_functions_tasks
         {
             string f = label2.Text.Substring(7);
             if(check(f)) MessageBox.Show("Все верно!", "Вы правы!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            else MessageBox.Show("Ответ ошибочный!", "Вы неправы!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else MessageBox.Show("Ответ ошибочный!", "Вы не правы!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
 
