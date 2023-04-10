@@ -16,5 +16,10 @@ namespace boolean_functions_tasks
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string f = textBox1.Text;
+        }
     }
 }
