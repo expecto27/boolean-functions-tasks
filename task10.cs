@@ -36,7 +36,7 @@ namespace boolean_functions_tasks
             {
                 fx += rnd.Next(0, 2).ToString();
             }
-            
+            label2.Text += fx;
         }
 
         private bool isT0(string f)

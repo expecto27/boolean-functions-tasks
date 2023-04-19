@@ -60,7 +60,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Info;
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(179, 37);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(130, 23);
