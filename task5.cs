@@ -55,6 +55,13 @@ namespace boolean_functions_tasks
                     {
                         MessageBox.Show("Все верно!", "Вы правы!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         t = false;
+                        Random rnd = new Random();
+                        string fx = "";
+                        for (int i = 0; i < 8; i++)
+                        {
+                            fx += rnd.Next(0, 2).ToString();
+                        }
+                        label1.Text += fx;
                     }
             if(t) MessageBox.Show("Ошибка!", "Вы не правы!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 

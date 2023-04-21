@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -37,8 +39,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -62,6 +62,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(779, 373);
             this.panel1.TabIndex = 17;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.main_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.main_MouseMove);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Impact", 17F);
+            this.label3.Location = new System.Drawing.Point(160, 264);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 28);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "ДНФ :";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Impact", 17F);
+            this.textBox3.Location = new System.Drawing.Point(237, 261);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(333, 35);
+            this.textBox3.TabIndex = 28;
             // 
             // label2
             // 
@@ -142,24 +162,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(172, 32);
             this.textBox1.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Impact", 17F);
-            this.textBox3.Location = new System.Drawing.Point(237, 261);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(333, 35);
-            this.textBox3.TabIndex = 28;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Impact", 17F);
-            this.label3.Location = new System.Drawing.Point(160, 264);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 28);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "ДНФ :";
             // 
             // task12
             // 
