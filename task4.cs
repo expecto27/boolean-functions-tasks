@@ -12,12 +12,13 @@ namespace boolean_functions_tasks
 {
     public partial class task4 : Form
     {
+
+        Point last;
+
         public task4()
         {
             InitializeComponent();
         }
-
-       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -26,12 +27,12 @@ namespace boolean_functions_tasks
             bool[] radioBut = { radioButton3.Checked, radioButton4.Checked, radioButton5.Checked , radioButton1.Checked,
             radioButton6.Checked, radioButton2.Checked, radioButton7.Checked, radioButton8.Checked, radioButton9.Checked,
             radioButton10.Checked, radioButton11.Checked, radioButton12.Checked, radioButton13.Checked, radioButton14.Checked,
-            radioButton14.Checked, radioButton15.Checked, radioButton16.Checked};
+            radioButton15.Checked, radioButton16.Checked};
             for(int i = 0; i < 16; i++)
             {
-                string bynaryCode = Convert.ToString(i, 2);
-                while (bynaryCode.Length < 4) bynaryCode = '0' + bynaryCode;
-                if (fx == bynaryCode && radioBut[i])
+                string binaryCode = Convert.ToString(i, 2);
+                while (binaryCode.Length < 4) binaryCode = '0' + binaryCode;
+                if (fx == binaryCode && radioBut[i])
                 {
                     flag = false;
                     MessageBox.Show("Все верно!", "Вы правы!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -45,7 +46,7 @@ namespace boolean_functions_tasks
         {
             this.Close();
         }
-        Point last;
+
         private void main_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)

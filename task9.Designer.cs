@@ -45,7 +45,8 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(172, 184);
+            this.button1.Font = new System.Drawing.Font("Impact", 13F);
+            this.button1.Location = new System.Drawing.Point(201, 181);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 38);
             this.button1.TabIndex = 11;
@@ -55,14 +56,15 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(172, 253);
+            this.textBox2.Font = new System.Drawing.Font("Impact", 14F);
+            this.textBox2.Location = new System.Drawing.Point(201, 253);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(171, 25);
+            this.textBox2.Size = new System.Drawing.Size(171, 30);
             this.textBox2.TabIndex = 10;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(172, 49);
+            this.textBox1.Location = new System.Drawing.Point(201, 47);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(171, 25);
             this.textBox1.TabIndex = 9;
@@ -70,18 +72,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(114, 256);
+            this.label2.Font = new System.Drawing.Font("Impact", 13F);
+            this.label2.Location = new System.Drawing.Point(134, 258);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 19);
+            this.label2.Size = new System.Drawing.Size(61, 22);
             this.label2.TabIndex = 7;
             this.label2.Text = "СКНФ :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 15);
+            this.label1.Font = new System.Drawing.Font("Impact", 13F);
+            this.label1.Location = new System.Drawing.Point(182, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 19);
+            this.label1.Size = new System.Drawing.Size(206, 22);
             this.label1.TabIndex = 6;
             this.label1.Text = "Введите вектор функции";
             // 
@@ -99,7 +103,7 @@
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(487, 317);
+            this.panel1.Size = new System.Drawing.Size(535, 376);
             this.panel1.TabIndex = 17;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.main_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.main_MouseMove);
@@ -111,7 +115,7 @@
             this.close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.close.ForeColor = System.Drawing.Color.Red;
-            this.close.Location = new System.Drawing.Point(458, 4);
+            this.close.Location = new System.Drawing.Point(505, 4);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(27, 25);
             this.close.TabIndex = 27;
@@ -124,7 +128,7 @@
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Location = new System.Drawing.Point(0, 32);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(488, 101);
+            this.panel3.Size = new System.Drawing.Size(535, 101);
             this.panel3.TabIndex = 14;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.main_MouseDown);
             this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.main_MouseMove);
@@ -136,7 +140,7 @@
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Location = new System.Drawing.Point(0, 9);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(488, 85);
+            this.panel2.Size = new System.Drawing.Size(535, 85);
             this.panel2.TabIndex = 0;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.main_MouseDown);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.main_MouseMove);
@@ -145,7 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 317);
+            this.ClientSize = new System.Drawing.Size(535, 376);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "task9";
