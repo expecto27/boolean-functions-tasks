@@ -336,7 +336,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(501, 536);
+            this.panel1.Size = new System.Drawing.Size(501, 549);
             this.panel1.TabIndex = 32;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.main_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.main_MouseMove);
@@ -380,7 +380,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 536);
+            this.ClientSize = new System.Drawing.Size(501, 549);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "task4";
