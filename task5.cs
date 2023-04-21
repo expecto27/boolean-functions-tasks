@@ -55,6 +55,7 @@ namespace boolean_functions_tasks
                     {
                         MessageBox.Show("Все верно!", "Вы правы!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         t = false;
+                        label1.Text = "f(x) =";
                         Random rnd = new Random();
                         string fx = "";
                         for (int i = 0; i < 8; i++)

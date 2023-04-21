@@ -97,3 +97,12 @@ C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean_functions_t
 C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task3.resources
 C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task11.resources
 C:\Users\expecto\Desktop\P\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task12.resources
+C:\Users\aima2\Source\Repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task10.resources
+C:\Users\aima2\Source\Repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task11.resources
+C:\Users\aima2\Source\Repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task12.resources
+C:\Users\aima2\Source\Repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task3.resources
+C:\Users\aima2\Source\Repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task5.resources
+C:\Users\aima2\Source\Repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task6.resources
+C:\Users\aima2\Source\Repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task7.resources
+C:\Users\aima2\Source\Repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task8.resources
+C:\Users\aima2\Source\Repos\expecto27\boolean-functions-tasks\obj\Debug\boolean_functions_tasks.task9.resources
