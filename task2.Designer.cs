@@ -30,7 +30,6 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,6 +39,8 @@
             this.close = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -51,9 +52,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(206, 265);
+            this.button1.Location = new System.Drawing.Point(206, 266);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 48);
+            this.button1.Size = new System.Drawing.Size(171, 48);
             this.button1.TabIndex = 15;
             this.button1.Text = "Получить ответ";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,21 +65,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(113, 338);
+            this.label4.Location = new System.Drawing.Point(113, 340);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 19);
             this.label4.TabIndex = 14;
             this.label4.Text = "Остаточная:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(239, 146);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 13;
             // 
             // textBox2
             // 
@@ -105,11 +96,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(113, 124);
+            this.label3.Location = new System.Drawing.Point(130, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(358, 19);
+            this.label3.Size = new System.Drawing.Size(369, 19);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Введите какую остаточную хотите получить (0 или 1)";
+            this.label3.Text = "Выберите какую остаточную хотите получить (0 или 1)";
             // 
             // label2
             // 
@@ -174,11 +165,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(176)))), ((int)(((byte)(117)))));
+            this.panel2.Controls.Add(this.radioButton2);
+            this.panel2.Controls.Add(this.radioButton1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(0, 9);
             this.panel2.Name = "panel2";
@@ -186,6 +178,32 @@
             this.panel2.TabIndex = 0;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.main_MouseDown);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.main_MouseMove);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton1.ForeColor = System.Drawing.SystemColors.Control;
+            this.radioButton1.Location = new System.Drawing.Point(206, 156);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(38, 30);
+            this.radioButton1.TabIndex = 13;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton2.ForeColor = System.Drawing.SystemColors.Control;
+            this.radioButton2.Location = new System.Drawing.Point(336, 156);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(41, 30);
+            this.radioButton2.TabIndex = 14;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "0";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // task2
             // 
@@ -209,7 +227,6 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
@@ -219,5 +236,7 @@
         private System.Windows.Forms.Label close;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

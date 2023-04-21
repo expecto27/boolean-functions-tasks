@@ -45,7 +45,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(265, 42);
+            this.textBox1.Location = new System.Drawing.Point(259, 42);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 31);
             this.textBox1.TabIndex = 0;
@@ -67,7 +67,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(190, 139);
+            this.button1.Location = new System.Drawing.Point(172, 139);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(262, 82);
             this.button1.TabIndex = 2;
