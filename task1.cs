@@ -15,18 +15,19 @@ namespace boolean_functions_tasks
         public task1()
         {
             InitializeComponent();
+            label2.Text = "";
         }
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label2.Text = "f(x) = ";
+            
+            label2.Text = "";
             Random rnd = new Random();
             int n = 0;
             try
             {
                 n = int.Parse(textBox1.Text);
-                
             }
             catch (Exception)
             {
@@ -36,13 +37,22 @@ namespace boolean_functions_tasks
             {
                 MessageBox.Show("Введите n в промежутке от 1 до 7", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            label2.Text = "f(";
+            
+            char[] args = { 'X', 'Y', 'Z', 'W', 'T', 'P', 'M', ' ' };
+
+            for (int i = 0; i < n; i++)
+            {
+                label2.Text += args[i];
+                if (i < (n - 1)) label2.Text += ',';
+            }
+            label2.Text += ") = ";
             int k = (1 << n);
-            string fx = "";
+            
             for (int i = 0; i < k; i++)
             {
-                fx += rnd.Next(0, 2).ToString();
+                label2.Text += rnd.Next(0, 2).ToString();
             }
-            label2.Text += fx;
         }
 
         private void close_Click(object sender, EventArgs e)
