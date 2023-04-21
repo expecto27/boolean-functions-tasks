@@ -125,11 +125,6 @@ namespace boolean_functions_tasks
             label2.Text += fx;
         }
 
-        private void task6_Load(object sender, EventArgs e)
-        {
-
-        }
-
         Point last;
         private void main_MouseMove(object sender, MouseEventArgs e)
         {
@@ -149,5 +144,6 @@ namespace boolean_functions_tasks
         {
             this.Close();
         }
+
     }
 }
